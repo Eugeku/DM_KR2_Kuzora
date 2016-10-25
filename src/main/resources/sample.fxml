@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <SplitPane dividerPositions="0.2" layoutX="120.0" layoutY="21.0" orientation="VERTICAL" prefHeight="400.0"
+                   prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="80.0" prefWidth="400.0">
+                    <children>
+                        <HBox layoutX="63.0" layoutY="32.0" spacing="20.0">
+                            <children>
+                                <RadioButton fx:id="radioButton1" layoutX="14.0" layoutY="23.0" mnemonicParsing="false"
+                                             onAction="#setRadioButton1" text="Дифференцирование">
+                                    <font>
+                                        <Font size="12.0"/>
+                                    </font>
+                                </RadioButton>
+                                <RadioButton fx:id="radioButton2" layoutX="169.0" layoutY="23.0" mnemonicParsing="false"
+                                             onAction="#setRadioButton2" text="Интегрирование">
+                                    <font>
+                                        <Font size="12.0"/>
+                                    </font>
+                                </RadioButton>
+                            </children>
+                        </HBox>
+                        <Label layoutX="133.0" layoutY="4.0" text="Выберите операцию">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                            prefHeight="320.0" prefWidth="400.0">
+                    <children>
+                        <SplitPane dividerPositions="0.7" layoutX="100.0" layoutY="63.0" prefHeight="320.0"
+                                   prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                            minWidth="-Infinity" prefHeight="320.0" prefWidth="280.0">
+                                    <children>
+                                        <Button fx:id="button3" disable="true" layoutX="14.0" layoutY="152.0"
+                                                maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                minWidth="-Infinity" mnemonicParsing="false" onAction="#setButton3"
+                                                prefHeight="30.0" prefWidth="90.0" text="Рассчитать" visible="false">
+                                            <font>
+                                                <Font size="14.0"/>
+                                            </font>
+                                        </Button>
+                                        <HBox fx:id="hBox1" alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0"
+                                              prefHeight="30.0" prefWidth="245.0" spacing="20.0" visible="false">
+                                            <children>
+                                                <TextField fx:id="textField1" alignment="CENTER_RIGHT" layoutX="72.0"
+                                                           layoutY="49.0" prefHeight="30.0" prefWidth="62.0">
+                                                    <font>
+                                                        <Font size="14.0"/>
+                                                    </font>
+                                                </TextField>
+                                                <Label fx:id="label1" layoutX="34.0" layoutY="54.0" prefHeight="20.0"
+                                                       prefWidth="152.0" text="Label">
+                                                    <font>
+                                                        <Font size="14.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="label2" layoutX="14.0" layoutY="74.0" text="Label"
+                                               visible="false">
+                                            <font>
+                                                <Font size="16.0"/>
+                                            </font>
+                                        </Label>
+                                        <Button fx:id="button1" layoutX="14.0" layoutY="44.0" mnemonicParsing="false"
+                                                onAction="#setButton1" prefHeight="30.0" prefWidth="62.0" text="OK"
+                                                visible="false">
+                                            <font>
+                                                <Font size="14.0"/>
+                                            </font>
+                                        </Button>
+                                        <TextArea fx:id="textArea2" editable="false" layoutX="4.0" layoutY="202.0"
+                                                  prefHeight="118.0" prefWidth="280.0">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </TextArea>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                            minWidth="-Infinity" prefHeight="320.0" prefWidth="120.0">
+                                    <children>
+                                        <Label layoutX="32.0" layoutY="14.0" text="Данные">
+                                            <font>
+                                                <Font size="12.0"/>
+                                            </font>
+                                        </Label>
+                                        <TextArea fx:id="textArea1" editable="false" layoutX="-40.0" layoutY="37.0"
+                                                  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                  minWidth="-Infinity" prefHeight="227.0" prefWidth="120.0"
+                                                  AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0"
+                                                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
+                                            <font>
+                                                <Font size="14.0"/>
+                                            </font>
+                                        </TextArea>
+                                        <Button fx:id="button2" layoutX="20.0" layoutY="264.0" mnemonicParsing="false"
+                                                onAction="#setButton2" text="Очистить">
+                                            <font>
+                                                <Font size="14.0"/>
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
