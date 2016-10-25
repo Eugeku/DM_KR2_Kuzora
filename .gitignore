@@ -1,0 +1,6 @@
+*.xml
+.idea/description.html
+*.fxml
+target/classes/sample/Controller.class
+*.class
+target/maven-archiver/pom.properties
